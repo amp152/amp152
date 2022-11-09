@@ -1,0 +1,46 @@
+route				duration of flight 		base price 		flight no		date			pilot			Departure		 arrival
+new york - dubai - delhi		16hrs			  4500	   	     TS a320 - TS a380	   every two days  	    Akshay(Tim) KS     		20:50			12:50
+dubai- cochin				4hrs			   700			TS747		      everyday	 	    Paru          		00:05			 04:05
+Dubai-London				7hrs			   3000			TS777		   every two days  	    Kilbabu           		01:25			 08:25
+Dubai-Hong Kong				7hrs			   3000			TS777		   every two days 	    Dion               		16:00			23:00
+Dubai -Los Angeles			18hrs			   6000			TSa380 		   every two days	    Allen     			09:00			03:00
+_________________________________________________________________________________________________________________________________________________________________________________________________
+create database tata;
+use tata;
+
+create table flights
+(Sno int(3) primary key,
+Route Varchar(50),
+Duration_of_FLight int(2),
+Base_Price int(7),
+Flight_no Varchar(30),
+Inter_val varchar(30),
+Pilot varchar(30),
+Departure varchar(5),
+Arrival varchar(5));
+
+insert into flights values
+(01,"New York(JFK)-Dubai(DXB)-Delhi(DEL)",16,4500,"TSa320-TSa380","every two days","Akshay(Tim) KS","20:50","12:50");
+insert into flights values
+(02,"Dubai(DXB)-Cochin(COK)",4,700,"TS747","everyday","Paru S","00:05","04:05");
+insert into flights values
+(03,"Dubai(DXB)-London(LHR)",7,3000,"TS777","every two days","Kilbabu","01:25","08:25");
+insert into flights values
+(04,"Dubai(DXB)-Hong Kong(HKG)",7,3000,"TS777","every two days","Benk.M","16:00","23:00");
+insert into flights values
+(05,"Dubai(DXB)-Los Angeles(LAX)",18,6000,"TSa380","every two days","Allen.M","09:00","03:00");
+
+create table user
+(username varchar(50) primary key,
+password varchar(30),
+First_Name varchar(20),
+Middle_Name varchar(20),
+Last_Name varchar(20),
+Age int(2));
+
+
+create table user
+(First varchar(20),
+middle varchar(20),
+last varchar(20),
+user_name varchar(50));                                   
